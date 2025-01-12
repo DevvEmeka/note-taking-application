@@ -6,7 +6,7 @@ export const Layout = () => {
     <div className="w-full">
       <div className=" flex w-full">
         <SideBar />
-        <div className="ml-56">
+        <div className="ml-32">
           <Outlet />
         </div>
       </div>
