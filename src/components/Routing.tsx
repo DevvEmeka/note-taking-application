@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router";
 import { Layout } from "./Layout";
-import App from "../App";
+import Home from "../pages/Home";
 
 function Routing() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<App />} />
+        {/* Nested Route */}
+        <Route path="home" element={<Home />} />
       </Route>
     </Routes>
   );
