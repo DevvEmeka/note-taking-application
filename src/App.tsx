@@ -20,7 +20,7 @@ function App() {
       <header className="flex justify-between items-center gap-[50rem]">
         <ul className="flex items-center justify-center gap-2">
           <li className="h-10 w-10">
-            <img className="w-full" src="../public/logo.svg" alt="logo" />
+            <img className="w-full" src="../assets/logo.svg" alt="logo" />
           </li>
           <li
             className={`text-lg font-bold ${
@@ -33,8 +33,8 @@ function App() {
         <ul className="flex items-center justify-center gap-2">
           <div
             className={`text-white py-[0.43rem] px-[0.7rem] rounded-md ${
-              darkmode ? "text-white bg-black" : "text-black bg-white"
-            } `}
+              darkmode ? "text-white bg-black" : "text-[#000] bg-white"
+            }`}
           >
             <Link to="/">Log in with Github</Link>
           </div>
@@ -72,7 +72,7 @@ function App() {
 
           <div className="flex justify-center">
             <div
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/dashboard")}
               className={`cursor-pointer rounded-md flex gap-5 items-center text-center justify-center mt-3 w-40 h-9 ${
                 darkmode ? "text-white bg-black" : "text-black bg-white"
               }`}
@@ -91,13 +91,13 @@ function App() {
               {darkmode ? (
                 <img
                   className="w-full text-white"
-                  src="../public/assets/documents.webp"
+                  src="../assets/documents.webp"
                   alt="center image"
                 />
               ) : (
                 <img
                   className="w-full text-white"
-                  src="../public/assets/documents-dark.webp"
+                  src="../assets/documents-dark.webp"
                   alt="center image dark"
                 />
               )}
@@ -106,13 +106,13 @@ function App() {
               {darkmode ? (
                 <img
                   className="w-full"
-                  src="../public/assets/reading.webp"
+                  src="../assets/reading.webp"
                   alt="center image"
                 />
               ) : (
                 <img
                   className="w-full"
-                  src="../public/assets/reading-dark.webp"
+                  src="../assets/reading-dark.webp"
                   alt="center image"
                 />
               )}
@@ -124,7 +124,7 @@ function App() {
       <footer className="flex justify-between items-center">
         <div className="flex items-center justify-center gap-2">
           <div className="h-10 w-10">
-            <img className="w-full" src="../public/logo.svg" alt="logo" />
+            <img className="w-full" src="../assets/logo.svg" alt="logo" />
           </div>
           <div
             className={`text-lg font-bold  ${
