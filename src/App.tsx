@@ -33,7 +33,7 @@ function App() {
         <ul className="flex items-center justify-center gap-2">
           <div
             className={`text-white py-[0.43rem] px-[0.7rem] rounded-md ${
-              darkmode ? "text-white bg-black" : "text-[#000] bg-white"
+              darkmode ? "text-white bg-black" : "text-red-700 bg-white"
             }`}
           >
             <Link to="/">Log in with Github</Link>

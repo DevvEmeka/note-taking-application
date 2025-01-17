@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import { SideBar } from "./SideBar";
 import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+// import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Layout = () => {
   const [hamburger, setHamburger] = useState(false);
